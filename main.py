@@ -12,10 +12,10 @@ while True:
 
 if tipo == 1:
     while True:
-        qualidade = int(input("Digite '1' para alta qualidade ou '2' para baixa qualidade: "))
-        if qualidade == 1 or qualidade == 2:
+        resolucao = int(input("Digite '1' para alta resolução ou '2' para baixa resolução: "))
+        if resolucao == 1 or resolucao == 2:
             break
-    if qualidade == 1:
+    if resolucao == 1:
         download.streams.get_highest_resolution().download(output_path=caminho, filename="pytube")
         print("Download concluído.")
     else:
